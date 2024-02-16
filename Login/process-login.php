@@ -18,6 +18,6 @@ if (isset($_POST) && !empty($_POST)) {
         header('location: login.php?error=loginFail');
     } else {
         $_SESSION["user"] = $useraAccout['username'];
-        header("location: ../product.php");
+        header("location: ../home.php");
     }
 }
