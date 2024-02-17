@@ -2,12 +2,13 @@
 session_start();
 if (isset($_GET['error'])) {
     $error = 'loi';
+    if (isset($_SESSION['username']) && $_SESSION["email"] && $_SESSION["password"]) {
+        $username = $_SESSION["username"];
+        $email = $_SESSION["email"];
+        $password = $_SESSION["password"];
+    }
 }
-if (isset($_SESSION['username']) && $_SESSION["email"] && $_SESSION["password"]) {
-    $username = $_SESSION["username"];
-    $email = $_SESSION["email"];
-    $password = $_SESSION["password"];
-}
+
 
 
 ?>

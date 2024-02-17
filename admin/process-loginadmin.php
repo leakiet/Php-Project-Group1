@@ -17,7 +17,6 @@ if (isset($_POST) && !empty($_POST)) {
     mysqli_close($conn);
     if ($adminaccout == null) {
         header('location: loginAdmin.php?error=loginFail');
-        $_SESSION["username"] = $adminaccout['username'];
     } else {
         $_SESSION["id"] = $adminaccout['id'];
         header("location: productlist.php");

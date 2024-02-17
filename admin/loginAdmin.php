@@ -3,9 +3,6 @@ session_start();
 if (isset($_GET['error'])) {
     $error = 'Password or login name is wrong';
 }
-if (isset($_SESSION['username'])) {
-    $username = $_SESSION["username"];
-}
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +32,7 @@ if (isset($_SESSION['username'])) {
         <div class="main-agileinfo">
             <div class="agileits-top">
                 <form action="process-loginadmin.php" method="post">
-                    <input class="text" type="text" name="username" placeholder="Username" required="" value="<?= (isset($username)) ? $username : '' ?>">
+                    <input class="text" type="text" name="username" placeholder="Username" required="">
                     <input class="text" type="password" name="password" placeholder="Password" required="">
                     <div>
                         <span class="error-login"><?= (isset($error)) ? $error : '' ?></span>
