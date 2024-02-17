@@ -13,7 +13,7 @@ if (isset($_POST) && !empty($_POST)) {
         die("Connection Failed!");
     }
     if ($password == $cpassword) {
-        $query = "insert into user (username , password,email) values ('$username', '$password','$email')";
+        $query = "insert into user (username , password,email,image) values ('$username', '$password','$email','ImgProfile/avartar-basic.jpg')";
         $result = mysqli_query($conn, $query);
     } else {
         $_SESSION['username'] = $username;

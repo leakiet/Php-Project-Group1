@@ -18,6 +18,7 @@ if (isset($_POST) && !empty($_POST)) {
         header('location: login.php?error=loginFail');
     } else {
         $_SESSION["user"] = $useraAccout['username'];
+        $_SESSION["userid"] = $useraAccout['userid'];
         header("location: ../home.php");
     }
 }
