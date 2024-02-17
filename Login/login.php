@@ -2,10 +2,11 @@
 session_start();
 if (isset($_GET['error'])) {
     $error = 'Password or login name is wrong';
+    if (isset($_SESSION['username'])) {
+        $username = $_SESSION["username"];
+    }
 }
-if (isset($_SESSION['username'])) {
-    $username = $_SESSION["username"];
-}
+
 ?>
 
 <!DOCTYPE html>
