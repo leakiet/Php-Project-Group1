@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <a href="http://localhost/DemoPHP/Php-Project-Group1/Login/logout.php" class="">Logout</a>
     product admin
 </body>
 

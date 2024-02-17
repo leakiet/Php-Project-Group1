@@ -2,9 +2,10 @@
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
-$userid = $_SESSION['userid'];
 // echo  $userid;
-if (isset($userid)) {
+if (isset($_SESSION['userid'])) {
+  $userid = $_SESSION['userid'];
+
   // echo $id;
   $conn = mysqli_connect('localhost', 'root', '', 'projectmini');
   if (!$conn) {
@@ -77,10 +78,10 @@ if (isset($userid)) {
       } else {
       ?>
         <div class="col-md-3 text-end">
-          <a href="Login/login.php" style="text-decoration: none;">
+          <a href="http://localhost/DemoPHP/Php-Project-Group1/Login/login.php" style="text-decoration: none;">
             <button type="button" class="btn btn-outline-primary me-2">Login</button>
           </a>
-          <a href="SignUp/signup.php" style="text-decoration: none;">
+          <a href="http://localhost/DemoPHP/Php-Project-Group1/SignUp/signup.php" style="text-decoration: none;">
             <button type="button" class="btn btn-outline-primary me-2">Sign-up</button>
           </a>
         </div>
