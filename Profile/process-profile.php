@@ -7,7 +7,7 @@ if (isset($_POST) && !empty($_POST)) {
     $location = $_POST['location'];
     $image_file = $_FILES['image'];
 
-    $conn = mysqli_connect('localhost', 'root', '', 'projectmini');
+    $conn = mysqli_connect('localhost', 'root', '', 'baitap');
     if (!$conn) {
         die("Connection Failed!");
     }

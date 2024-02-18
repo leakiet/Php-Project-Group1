@@ -7,7 +7,7 @@ if (isset($_POST) && !empty($_POST)) {
     $cpassword = $_POST['cpassword'];
     // echo $username . $email . $password . $cpassword;
 
-    $conn = mysqli_connect('localhost', 'root', '', 'projectmini');
+    $conn = mysqli_connect('localhost', 'root', '', 'baitap');
 
     if (!$conn) {
         die("Connection Failed!");

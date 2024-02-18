@@ -4,7 +4,7 @@ session_start();
 if (isset($_SESSION['userid'])) {
     $userid = $_SESSION['userid'];
     // echo $id;
-    $conn = mysqli_connect('localhost', 'root', '', 'projectmini');
+    $conn = mysqli_connect('localhost', 'root', '', 'baitap');
     if (!$conn) {
         die("Connection Failed!");
     }
