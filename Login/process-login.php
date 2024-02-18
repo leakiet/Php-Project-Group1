@@ -15,7 +15,7 @@ if (isset($_POST) && !empty($_POST)) {
     // var_dump($useraAccout);
     mysqli_close($conn);
     if ($useraAccout == null) {
-        header('location: login.php?error=loginFail');
+        header('location: ../login.php?error=loginFail');
     } else {
         $_SESSION["user"] = $useraAccout['username'];
         $_SESSION["userid"] = $useraAccout['userid'];

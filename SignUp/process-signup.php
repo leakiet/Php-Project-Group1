@@ -20,13 +20,13 @@ if (isset($_POST) && !empty($_POST)) {
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
 
-        header('location: signup.php?error=Passwordsdonotmatch!');
+        header('location: ../signup.php?error=Passwordsdonotmatch!');
     }
 
     mysqli_close($conn);
     if ($result == true) {
         // echo "<script>alert('Product added successfully!')</script>";
-        header("location: ../LogIn/login.php");
+        header("location: ../login.php");
     } else {
         die('error fail');
     }

@@ -37,12 +37,12 @@ $currentPromotion = "10% off all Samsung products";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - <?php echo $shopName; ?></title>
-    <link rel="stylesheet" href="./about-us.css">
+    <link rel="stylesheet" href="./AboutUs/about-us.css">
 </head>
 
 
 <body>
-    <?php include('../Header/header.php'); ?>
+    <?php include('header.php'); ?>
     <header>
         <h1><?php echo $shopName; ?></h1>
     </header>

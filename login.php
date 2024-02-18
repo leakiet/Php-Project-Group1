@@ -27,7 +27,7 @@ if (isset($_GET['error'])) {
     </script>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet"> -->
-    <link href="./login.css" rel="stylesheet">
+    <link href="./Login/login.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +35,7 @@ if (isset($_GET['error'])) {
         <h1>Sign Up </h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <form action="./process-login.php" method="post">
+                <form action="./Login/process-login.php" method="post">
                     <input class="text" type="text" name="username" placeholder="Username" required="" value="<?= (isset($username)) ? $username : '' ?>">
                     <input class="text" type="password" name="password" placeholder="Password" required="">
                     <div>
@@ -43,7 +43,7 @@ if (isset($_GET['error'])) {
                     </div>
                     <input type="submit" value="LOG IN">
                 </form>
-                <p>Don't have an Account? <a href="../SignUp/signup.php">Sign Up now!</a></p>
+                <p>Don't have an Account? <a href="./signup.php">Sign Up now!</a></p>
             </div>
         </div>
         <!-- <ul class="colorlib-bubbles">

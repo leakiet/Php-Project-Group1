@@ -27,7 +27,7 @@ if (isset($_POST) && !empty($_POST)) {
 
     $result = mysqli_query($conn, $query);
     if ($result) {
-        header("location: profile.php");
+        header("location: ../profile.php");
     } else {
         die('Error updating user profile');
     }

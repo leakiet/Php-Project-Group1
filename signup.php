@@ -34,7 +34,7 @@ if (isset($_GET['error'])) {
     <!-- //Custom Theme files -->
     <!-- web font -->
     <!-- <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet"> -->
-    <link href="./signup.css" rel="stylesheet">
+    <link href="./SignUp/signup.css" rel="stylesheet">
 
 
     <!-- //web font -->
@@ -46,7 +46,7 @@ if (isset($_GET['error'])) {
         <h1>Sign Up </h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <form action="./process-signup.php" method="post">
+                <form action="./SignUp/process-signup.php" method="post">
                     <input class="text" type="text" name="Username" placeholder="Username" required="" value="<?= isset($username) ? $username : '' ?>">
                     <input class="text email" type="email" name="email" placeholder="Email" required="" value="<?= isset($email) ? $email : '' ?>">
                     <input class="text" type="password" name="password" placeholder="Password" required="" value="<?= isset($password) ? $password : '' ?>">
@@ -68,7 +68,7 @@ if (isset($_GET['error'])) {
                     </div>
                     <input type="submit" value="SIGN UP">
                 </form>
-                <p>Already have an account |<a href="../Login/login.php"> Login Now!</a></p>
+                <p>Already have an account |<a href="./login.php"> Login Now!</a></p>
             </div>
         </div>
         <!-- <ul class="colorlib-bubbles">

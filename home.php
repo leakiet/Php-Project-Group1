@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <?php include('./Header/header.php'); ?>
+    <?php include('header.php'); ?>
 </body>
 
 </html>
